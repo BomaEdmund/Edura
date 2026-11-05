@@ -1,0 +1,309 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EDURA - Discover, explore and find your dream car.">
+    <title>EDURA | Premium Automotive Marketplace</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="navbar">
+        <a href="#" class="logo">EDURA<span>.</span></a>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#inventory">Explore Cars</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button class="wishlist-nav" id="wishlistButton">
+                ♡ <span id="wishlistCount">0</span>
+            </button>
+            <a href="#inventory" class="nav-cta">Explore Inventory</a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <p class="eyebrow">WELCOME TO EDURA MOTORS</p>
+
+            <h1>Drive Your <br><span>Dream.</span></h1>
+
+            <p class="hero-description">
+                Discover exceptional automobiles, experience
+                luxury and find the perfect vehicle for your journey.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#inventory" class="primary-btn">Explore Collection ↗</a>
+                <a href="#about" class="secondary-btn">Discover EDURA</a>
+            </div>
+
+            <div class="hero-stats">
+                <div>
+                    <h3>150+</h3>
+                    <p>Premium Cars</p>
+                </div>
+                <div>
+                    <h3>30+</h3>
+                    <p>Car Brands</p>
+                </div>
+                <div>
+                    <h3>100%</h3>
+                    <p>Customer Focus</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEARCH SECTION -->
+    <section class="search-section">
+        <div class="search-heading">
+            <p class="eyebrow">FIND YOUR NEXT DRIVE</p>
+            <h2>Find the perfect car</h2>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" id="searchInput"
+                placeholder="Search by car name or brand...">
+
+            <select id="brandFilter">
+                <option value="all">All Brands</option>
+                <option value="Mercedes-Benz">Mercedes-Benz</option>
+                <option value="BMW">BMW</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Lexus">Lexus</option>
+                <option value="Porsche">Porsche</option>
+                <option value="Range Rover">Range Rover</option>
+            </select>
+
+            <select id="typeFilter">
+                <option value="all">All Categories</option>
+                <option value="SUV">SUV</option>
+                <option value="Sedan">Sedan</option>
+                <option value="Sports">Sports</option>
+            </select>
+
+            <button id="searchButton" class="search-btn">Search Cars</button>
+        </div>
+    </section>
+
+    <!-- INVENTORY -->
+    <section class="inventory section-padding" id="inventory">
+
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">OUR COLLECTION</p>
+                <h2>Explore Our <span>Vehicles</span></h2>
+                <p class="section-description">
+                    Carefully selected automobiles for every kind of journey.
+                </p>
+            </div>
+
+            <button class="reset-btn" id="resetFilters">Reset Filters ↻</button>
+        </div>
+
+        <div class="inventory-info">
+            <p id="resultsCount">Showing all vehicles</p>
+            <select id="sortFilter" aria-label="Sort vehicles">
+                <option value="default">Sort: Featured</option>
+                <option value="low">Price: Low to High</option>
+                <option value="high">Price: High to Low</option>
+                <option value="year">Newest First</option>
+            </select>
+        </div>
+
+        <div class="car-grid" id="carGrid">
+            <!-- Cars are generated with JavaScript -->
+        </div>
+
+        <p id="emptyMessage" class="empty-message" hidden>
+            No cars found. Try changing your search or filters.
+        </p>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about section-padding" id="about">
+        <div class="about-image">
+            <img
+                src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1200&q=85"
+                alt="Premium luxury automobile">
+        </div>
+
+        <div class="about-content">
+            <p class="eyebrow">THE EDURA EXPERIENCE</p>
+            <h2>More Than Just <span>A Car.</span></h2>
+
+            <p>
+                At EDURA, we believe that finding your dream car should
+                be an exciting and effortless experience.
+            </p>
+
+            <p>
+                Our platform brings together exceptional vehicles,
+                detailed information and a simple way to explore
+                your next automobile.
+            </p>
+
+            <div class="about-points">
+                <div>✓ Carefully selected vehicles</div>
+                <div>✓ Detailed vehicle specifications</div>
+                <div>✓ Simple booking enquiries</div>
+                <div>✓ A seamless browsing experience</div>
+            </div>
+
+            <a href="#inventory" class="primary-btn">Explore Our Cars ↗</a>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="why-us section-padding">
+        <div class="center-heading">
+            <p class="eyebrow">WHY EDURA</p>
+            <h2>Designed Around <span>Your Drive.</span></h2>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">✦</div>
+                <h3>Premium Selection</h3>
+                <p>Explore an exclusive collection of carefully selected vehicles.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">◇</div>
+                <h3>Easy Discovery</h3>
+                <p>Find vehicles using our convenient search and filtering tools.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">↗</div>
+                <h3>Simple Enquiries</h3>
+                <p>Submit an enquiry and request a test-drive appointment.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="cta-section">
+        <div>
+            <p class="eyebrow">YOUR JOURNEY STARTS HERE</p>
+            <h2>Ready to Find Your <span>Dream Car?</span></h2>
+            <p>Discover your next favourite automobile with EDURA.</p>
+        </div>
+
+        <a href="#inventory" class="primary-btn">Browse Collection ↗</a>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact section-padding" id="contact">
+        <div class="contact-info">
+            <p class="eyebrow">GET IN TOUCH</p>
+            <h2>Let's Talk <span>Cars.</span></h2>
+            <p>Have questions about a vehicle? Send us an enquiry.</p>
+
+            <p>✉ hello@edura.example</p>
+            <p>☎ +234 800 000 0000</p>
+            <p>📍 Lagos, Nigeria</p>
+        </div>
+
+        <form id="contactForm" class="contact-form">
+            <input type="text" id="contactName"
+                placeholder="Your name" required>
+
+            <input type="email" id="contactEmail"
+                placeholder="Email address" required>
+
+            <textarea id="contactMessage"
+                placeholder="How can we help you?" required></textarea>
+
+            <button type="submit" class="primary-btn">Send Enquiry ↗</button>
+            <p id="contactFeedback" class="form-feedback" aria-live="polite"></p>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <a href="#" class="logo">EDURA<span>.</span></a>
+
+        <p>Redefining the way you discover automobiles.</p>
+
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#inventory">Vehicles</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <p class="copyright">
+            © <span id="currentYear"></span> EDURA Motors. All rights reserved.
+        </p>
+    </footer>
+
+    <!-- CAR DETAILS MODAL -->
+    <div class="modal" id="carModal" role="dialog"
+        aria-modal="true" aria-labelledby="modalTitle" hidden>
+        <div class="modal-content">
+            <button class="close-modal" id="closeCarModal"
+                aria-label="Close">×</button>
+            <div id="modalDetails"></div>
+        </div>
+    </div>
+
+    <!-- BOOKING MODAL -->
+    <div class="modal" id="bookingModal" role="dialog"
+        aria-modal="true" aria-labelledby="bookingTitle" hidden>
+        <div class="modal-content booking-content">
+            <button class="close-modal" id="closeBookingModal"
+                aria-label="Close">×</button>
+
+            <p class="eyebrow">BOOK AN APPOINTMENT</p>
+            <h2 id="bookingTitle">Request a Test Drive</h2>
+            <p id="bookingCarName"></p>
+
+            <form id="bookingForm">
+                <input type="hidden" id="bookingCarId">
+
+                <input type="text" id="bookingName"
+                    placeholder="Full name" required>
+
+                <input type="email" id="bookingEmail"
+                    placeholder="Email address" required>
+
+                <input type="tel" id="bookingPhone"
+                    placeholder="Phone number" required>
+
+                <label for="bookingDate">Preferred date</label>
+                <input type="date" id="bookingDate" required>
+
+                <button type="submit" class="primary-btn">
+                    Submit Request ↗
+                </button>
+
+                <p id="bookingFeedback" class="form-feedback"
+                    aria-live="polite"></p>
+            </form>
+        </div>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
